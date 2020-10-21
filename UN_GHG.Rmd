@@ -1,0 +1,11 @@
+
+---
+title: 'Hello world'
+author: 'Kirill'
+date: `r format(Sys.time(), '%d %B, %Y')`
+output: pdf_document
+---
+
+library(readr)
+GHG <- read_csv("greenhouse_gas_inventory_data_data.csv")
+head(GHG)
