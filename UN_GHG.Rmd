@@ -1,11 +1,12 @@
 
 ---
-title: 'Hello world'
-author: 'Kirill'
+title: 'EDA Report'
+author: 'Yvonne Tamba'
 date: `r format(Sys.time(), '%d %B, %Y')`
 output: pdf_document
+params:
+   data:"green_house_gas_inventory_data_data.csv"
 ---
 
-library(readr)
-GHG <- read_csv("greenhouse_gas_inventory_data_data.csv")
-head(GHG)
+#EDA
+head(data)
