@@ -1,0 +1,18 @@
+---
+title: 'Report on data collected from farm trials in Northern Ghana'
+author: 'Yvonne Tamba'
+output: pdf_document
+params:
+  data: "Eprod_maize_data.csv"
+  date: "r format(Sys.time(), '%d %B, %Y')"
+---
+
+
+```{r, setup, include=TRUE}
+library(readr)
+#library(tidyverse)
+Data<- read_csv(params$data)
+#tidyverse::glimpse(Data)
+str(Data)
+summary(Data)
+```
